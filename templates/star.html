@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Шаблон №2 — Звёздочка</title>
+  <style>
+    @page { size: A4 portrait; margin: 15mm; }
+    body { font-family: 'Comic Sans MS', 'Arial', sans-serif; text-align: center; color: #1e293b; padding: 20px; }
+    .header { border-bottom: 2px solid #e2e8f0; padding-bottom: 12px; margin-bottom: 20px; }
+    h1 { font-size: 26px; margin: 0 0 6px; color: #d97706; }
+    p { font-size: 15px; color: #64748b; margin: 0; }
+    .canvas-box {
+      width: 440px;
+      height: 440px;
+      margin: 30px auto;
+      border: 3px dashed #94a3b8;
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+    .corner {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      border-color: #0f172a;
+      border-style: solid;
+    }
+    .c-tl { top: -2px; left: -2px; border-width: 4px 0 0 4px; }
+    .c-tr { top: -2px; right: -2px; border-width: 4px 4px 0 0; }
+    .c-bl { bottom: -2px; left: -2px; border-width: 0 0 4px 4px; }
+    .c-br { bottom: -2px; right: -2px; border-width: 0 4px 4px 0; }
+    .footer {
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>«Оживлятор»</h1>
+    <p>Шаблон для детского рисунка • Звёздочка</p>
+  </div>
+  <p><em>Совет: нарисуйте весёлое лицо звёздочки и раскрасьте её яркими красками.</em></p>
+
+  <div class="canvas-box">
+    <div class="corner c-tl"></div>
+    <div class="corner c-tr"></div>
+    <div class="corner c-bl"></div>
+    <div class="corner c-br"></div>
+    <svg width="380" height="380" viewBox="0 0 100 100">
+      <polygon points="50,5 64,36 98,36 70,57 81,91 50,70 19,91 30,57 2,36 36,36" fill="none" stroke="#475569" stroke-width="2.5" stroke-dasharray="4,4"/>
+    </svg>
+  </div>
+
+  <div class="footer">
+    <div>Имя юного художника: ______________________</div>
+    <div>«Оживлятор» 2026 • Все права защищены</div>
+  </div>
+</body>
+</html>
